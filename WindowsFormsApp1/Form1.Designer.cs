@@ -50,6 +50,8 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -61,7 +63,7 @@
             // 
             // NEGROOOOO
             // 
-            this.NEGROOOOO.Location = new System.Drawing.Point(389, 71);
+            this.NEGROOOOO.Location = new System.Drawing.Point(420, 68);
             this.NEGROOOOO.Name = "NEGROOOOO";
             this.NEGROOOOO.Size = new System.Drawing.Size(75, 23);
             this.NEGROOOOO.TabIndex = 1;
@@ -79,23 +81,26 @@
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2,
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader3});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(501, 59);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(191, 302);
+            this.listView1.Size = new System.Drawing.Size(263, 302);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
+            this.columnHeader1.DisplayIndex = 0;
             this.columnHeader1.Text = "Nome";
             this.columnHeader1.Width = 93;
             // 
             // columnHeader2
             // 
+            this.columnHeader2.DisplayIndex = 1;
             this.columnHeader2.Text = "Versameno";
             this.columnHeader2.Width = 108;
             // 
@@ -233,11 +238,23 @@
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 19;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Valuta";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(364, 71);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(50, 20);
+            this.textBox9.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -290,6 +307,8 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
 
