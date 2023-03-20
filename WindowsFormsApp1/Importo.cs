@@ -23,7 +23,14 @@ namespace WindowsFormsApp1
             set { soldo = value; }
         }
         public override int GetHashCode() => (soldo).GetHashCode();
+        public bool Equals(Importo p)
+        {
+            if (p == null) return false;
 
+            if (this == p) return true;
+
+            return (this.soldo == p.soldo);
+        }
     }
 
 }

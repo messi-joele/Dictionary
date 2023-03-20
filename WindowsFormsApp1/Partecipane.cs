@@ -20,5 +20,13 @@ namespace WindowsFormsApp1
         {
             return Nome.GetHashCode();
         }
+        public bool Equals(Partecipane p)
+        {
+            if (p == null) return false;
+
+            if (this == p) return true;
+
+            return (this.Nome == p.Nome);
+        }
     }
 }
